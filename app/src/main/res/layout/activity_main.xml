@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--  ViewGroup where we want to load the puppet into.-->
+    <FrameLayout
+        android:id="@+id/puppet_container"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#ccc"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    Button to move the left arm-->
+    <Button
+        android:id="@+id/move_left_arm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/move_left_arm" />
+
+    <!--    Button to move the right arm-->
+    <Button
+        android:id="@+id/move_right_arm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/move_right_arm_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <!--        input field to collect the text the puppet is supposed to say-->
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:id="@+id/enter_phrase_input"
+            android:hint="@string/enter_phrase_to_say" />
+
+        <!--        button to trigger the speech of the puppet-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/say_phrase_button"
+            android:text="@string/say_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

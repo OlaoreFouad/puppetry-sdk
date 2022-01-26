@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Puppetry-SDK</string>
+    <string name="enter_phrase_to_say">Enter phrase to say</string>
+    <string name="say_text">Say</string>
+    <string name="move_right_arm_text">Move Right Arm</string>
+    <string name="move_left_arm">Move Left Arm</string>
+</resources>
